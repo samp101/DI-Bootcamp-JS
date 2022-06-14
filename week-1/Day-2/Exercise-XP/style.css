@@ -1,0 +1,47 @@
+table{
+    /* width: 100%; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td,th{
+    border: black solid 1px;
+}
+td{
+    padding: 20px;
+    text-align: center;
+}
+
+#red{
+    border: red 1px solid;
+    text-align: center;
+    color: red;
+    /* width: 100%; */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+article{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#lionPic{
+    margin-top: 30px;
+    
+}
+ol li{
+    list-style-type:upper-roman;
+}
+#makeBold{
+    font-weight: bold;
+}
+#underline{
+    text-decoration: underline;
+
+}
+#makeYellowBack{
+    background-color: yellow;
+}
