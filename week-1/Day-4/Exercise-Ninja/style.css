@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'gotham-rounded';
+    src: url(./static/GothamRoundedBook_21018.ttf);
+}
+@font-face {
+    font-family: 'gotham-rounded';
+    src: url(./static/GothamRoundedBold_21016.ttf);
+    font-weight: bold;
+}
+html,body{
+    margin: 0px;
+    font-family: 'gotham-rounded';
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+#sect-1,#sect-2{
+     height: 100vh;
+    /* width: 100vw;  */
+}
+#sect-1{
+    background-color: #FAFAFA;
+    width: 50%;
+    float: left;
+}
+
+#main-1{
+    width: 80%;
+    background-color: #FAFAFA;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    height: 500px;
+    padding-top: 150px;
+
+}
+h1{
+    text-align: center;
+}
+.input{
+    width: 100%;
+    height: 40px;
+    margin: 20px 0px;
+    border-radius: 5px;
+    border: none;
+    background-color: #EEEEEE;
+}
+#login{
+    text-align: center;
+    background-color: #9626A9;
+    color: white;
+}
+#main-1 a{
+    float: right;
+    color: #646363;
+    text-decoration: none;
+}
+#remember-container{
+    color: #646363;
+}
+h1,p{
+    /* text-align: center; */
+}
+#social-media{
+    margin: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    text-align: center;
+    font-size: 25px;
+}
+#social-media:before {
+    content: "";
+    display: block;
+    width: 20%;
+    height: 5px;
+    background: rgb(133, 132, 132);
+    left: 5px;
+    top: 50%;
+    position: absolute;
+  }
+#social-media:after {
+    content: "";
+    display: block;
+    width: 20%;
+    height: 5px;
+    background: 1px rgb(133, 132, 132);
+    right: 5px;
+    top: 50%;
+    position: absolute;
+  }
+ul{
+    /* float: left; */
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+li{
+     display: inline;
+     text-align: center;
+     margin: 10px;
+}
+img{
+    height: 30px;
+}
+#sect-2{
+    background-color: aqua;
+    float: right;
+    width: 50%;
+    background-image: linear-gradient(to bottom right, #292136, #9626A9);
+
+}
+#sect-2 main{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 150px;
+    text-align: center;
+    color: #fff;
+
+    
+}
+svg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#sect-2 span{
+    font-size: 80px;
+    font-weight: bold;
+}
+#sect-2 p{
+    font-size: 30px;
+}
+button{
+    width:250px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: #6F2580;
+    border: 1px solid white;
+    color: #ffff;
+    font-weight: bold;
+}
+
+footer{
+    /* text-align: center; */
+    bottom: 15px;
+    /* right: 50%; */
+    left: 19%;
+    position: fixed;
+}
