@@ -1,0 +1,52 @@
+html, body{
+    margin: 0; 
+    padding: 0;
+}
+body{
+    height:100vh;
+    width: 100vw;;
+}
+nav{
+    
+    background-color: black;
+    /* height: 50px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color:#fff;
+    /* text-align: center; */
+    /* width: 100%; */
+    /* position: relative; */
+}
+nav ul{
+    position: relative;
+    /* background-color: black; */
+    padding: 0;
+    margin: 0;
+    /* float: right; */
+    /* top: 50%;
+    right: 10%;
+    transform: translate(-50%, -50%); */
+}
+nav li{
+    display: inline;
+    float: right;
+    /* margin-right: 20px; */
+    margin-left: 20px;
+
+}
+main{
+    position: relative;
+}
+img{
+    width: 100%;
+    /* height: 100vh; */
+}
+
+#text{
+    position: absolute;
+    top: 10%;
+    right:10%;
+    width: 300px;
+    background-color: bisque;
+    opacity: .8;
+}
