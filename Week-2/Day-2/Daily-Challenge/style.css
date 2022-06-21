@@ -1,0 +1,10 @@
+html,body{
+    margin: 0px;
+    padding: 0px;
+}
+
+main{
+    display: grid;
+    grid-area: top top top top
+            right right left left;
+}
