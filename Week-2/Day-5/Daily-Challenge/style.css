@@ -1,0 +1,174 @@
+html,body{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.box{
+    width:300px;
+    height:200px;
+    margin: 100px;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+
+.box1{
+    transition: .5s;
+}
+
+.box1:hover{
+opacity: .5;
+transition: .5s;
+
+}
+.box1{
+    transition: .5s;
+}
+
+.box2:hover{
+    background-color: aqua;
+    transition: .5s;
+}
+
+.box2{
+    transition: .5s;
+}
+
+.box3{
+    /* transition: .5s; */
+    /*  */
+}
+.box3:hover{
+    transition: .5s;
+    transform: scale(1.3);
+}
+
+.box4{
+    transition: .5s;
+    
+}
+.box4:hover{
+    transition: .5s;
+    transform: scale(.5);
+}
+.box5{
+    transition: .5s;
+    
+}
+.box5:hover{
+    transition: .5s;
+    transform: rotate(30deg);
+}
+.box5:active{
+    transition: .5s;
+    transform: rotate(-30deg);
+}
+.box6{
+    transition: .5s;
+    
+}
+.box6:hover{
+    transition: .5s;
+    border-radius: 50%;
+}
+
+.box7{
+    transition: .5s;
+    
+}
+.box7:hover{
+    transition: .5s;
+    transform: translate(30px, -10px);
+    box-shadow: -20px 5px;
+}
+.box7:active{
+    transition: .5s;
+    transform: translate(30px, -60px);
+    box-shadow: -20px 5px;
+}
+
+/* .box8{
+    @-webkit-keyframes box8 {
+        50%{
+            -webkit-transform: rotate(30deg)
+            
+        }
+        100%{
+            -webkit-transform: rotate(-30deg)
+
+        }
+        
+    }
+} */
+
+@-webkit-keyframes box8
+{
+    
+    25%
+    {
+        -webkit-transform: rotate(-30deg);
+        transform: rotate(-30deg);
+    }
+    50%
+    {
+        -webkit-transform: rotate(30deg);
+        transform: rotate(30deg);
+    }
+    75%
+    {
+        -webkit-transform: rotate(-30deg);
+        transform: rotate(-30deg);
+    }
+    100%
+    {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+/* @keyframes box8 */
+{
+    
+    25%
+    {
+        -webkit-transform: rotate(-30deg);
+        transform: rotate(-30deg);
+    }
+    50%
+    {
+        -webkit-transform: rotate(30deg);
+        transform: rotate(30deg);
+    }
+    75%
+    {
+        -webkit-transform: rotate(-30deg);
+        transform: rotate(-30deg);
+    }
+    100%
+    {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+.box8:hover{
+    -webkit-animation: box8 1s ease;
+    animation: box8 2s ease-out;
+    /* -webkit-animation-iteration-count: 1; */
+    animation-iteration-count: 1;
+}
+
+.box9{
+    transition: .5s;
+}
+.box9:hover{
+    transition: .5s;
+    /* box-shadow: -10px -10px black inset, 10px 10px black inset  ; */
+    box-shadow: inset 0 0 0 20px black;
+}
