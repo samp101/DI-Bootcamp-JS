@@ -113,3 +113,13 @@ for(  row = 1; row <= n ;){
     }
 
 }
+
+
+star = ''
+for (let index = 1; index < 6; index++) {
+    star +="* ".repeat(index)
+    star+='\n'
+}
+console.log(star)
+
+
