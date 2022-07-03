@@ -1,6 +1,18 @@
 // let age1 = prompt('please enter your age when you where ')
 // let age2 = prompt('please enter your age when you where ')
 // I dont understand the question
+
+let year1 = Number(prompt("Please enter the year you were born:"));
+let year2 = Number(prompt("Please enter the year you were born:"));
+let older = 0;
+let younger = 0;
+let outputYear;
+year1 < year2 
+? outputYear = year2*2 - year1
+:outputYear =  year1*2 - year2;
+alert(outputYear);
+
+
 // E2
 
 let postal = Number(prompt('please enter your postal?'))
@@ -28,7 +40,7 @@ let word = prompt('please enter a word with many vowels elefant is a good exampl
 a = 'abecidofug'
 
 console.log(word.replace(/[aeiou]/ig,''))
-console.log(word.replace(/a/g,1).replace(/e/g,2).replace(/i/g,3).replace(/a/g,'1').replace(/o/g,4).replace(/u/g,5))
+console.log(word.replace(/a/gi,1).replace(/e/gi,2).replace(/i/gi,3).replace(/a/gi,'1').replace(/o/gi,4).replace(/u/gi,5))
 
 
 
