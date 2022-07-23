@@ -34,11 +34,11 @@ const pTagNotIncludingSpace = document.querySelector('#notIncludeSpace')
 const pTagNumOfWord = document.querySelector('#numOfWords')
 const pTagLikes = document.querySelector('#likes')
 
-const buttonIncludingSpace  = document.querySelector('buttonIncludingSpac')
-const buttonNotIncludingSpace = document.querySelector('buttonNotIncludingSpac')
-const buttonNumberOfWords = document.querySelector('buttonNumberOfWord')
-const buttonLikes = document.querySelector('buttonLike')
+const pTagDisplayQuote = document.querySelector('#display-Quote')
+const pTagDispalyAuthor = document.querySelector('#display-Author')
 
+
+const inputFindAuthor = document.querySelector('#inputFindAuthor')
 
 const buttonGenerater = document.querySelector('#generate') 
 const quoteTag = document.querySelector('#quote-element') 
@@ -49,6 +49,7 @@ const submitNewQuote = document.querySelector('#submit-new-quote')
 
 let quotesArrayLength = quotes.length
 const form = document.querySelector('#form')
+const form2 = document.querySelector('#formFindAithor')
 
 
 buttonGenerater.addEventListener('click', generateQuote)
@@ -56,7 +57,11 @@ buttonGenerater.addEventListener('click', generateQuote)
 let previousSelectedNumber;
 
 function generateQuote(){
-
+    pTagIncludingSpace.innerHTML = ''
+    pTagNumOfWord.innerHTML = ''
+    pTagNotIncludingSpace.innerHTML = ''
+    pTagLikes.innerHTML = ''
+    
     quoteTag.innerHTML = ''
     authorTag.innerHTML = ''
 
@@ -75,7 +80,7 @@ function generateQuote(){
 
 }
 function displayNumCharachterIncludingSpace(){
-    pTagIncludingSpace.innerHTML = quotes[previousSelectedNumber].quote.length
+    return pTagIncludingSpace.innerHTML = quotes[previousSelectedNumber].quote.length
     
 }
 function displayNumCharachterNOTIncludingSpace(){
@@ -85,12 +90,11 @@ function displayNumCharachterNOTIncludingSpace(){
 }
 
 function numOfWords(){
-    console.log(quotes[previousSelectedNumber].quote.split(' '));
-    pTagNumOfWord.innerHTML = quotes[previousSelectedNumber].quote.split(' ').length
+    return pTagNumOfWord.innerHTML = quotes[previousSelectedNumber].quote.split(' ').length
 
 }
 function numOfLikes(){
-     pTagLikes.innerHTML = quotes[previousSelectedNumber].likes +=1
+    return pTagLikes.innerHTML = quotes[previousSelectedNumber].likes +=1
 }
 form.addEventListener('submit',addNewQuote)
 
@@ -107,5 +111,16 @@ function addNewQuote(e){
     NewQuote.value =''
     return quotes.push(newObj)
     }
+}
+
+form2.addEventListener('submit',addNewQuote)
+
+function addNewQuote(e){
+    // if
+    // e.preventDefault()
+    // if((/\w/gi).test(inputFindAuthor.value)){
+    //     pTagDispalyAuthor.innerHTML = ''
+    //     pTagDispalyQuote = ''
+    // }
 }
 
