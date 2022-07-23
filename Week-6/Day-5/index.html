@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<section class='flex'>
+    <div id="container" style='flex-direction: column;' class='flex'>
+        <div id="quote-container">
+            <input id = 'generate' type="button" value="Generate Quote">
+            <p id = 'quote-element'><img src="./left-quote.png" width='30px' alt="" srcset=""></p>
+            <p id = 'author-element'></p>
+        </div>
+        <div  id="formForNewQuotes">
+            <form  class = 'flex' style='flex-direction: column;' id = 'form' >
+                <input placeholder='New Author' type="text" id = 'newAuthor'>
+                <textarea placeholder='New Quote' name="quotes" id="newQuote" cols="30" rows="10"></textarea>
+                <input id = 'submit-new-quote' type="submit" value="Add New Quote" >
+            </form>
+        </div>
+        <div id="buttons">
+            <button id ='buttonIncludingSpace' class = 'display-buttons' onclick='displayNumCharachterIncludingSpace()'>Including Space</button>
+            <p class = 'ptag' id="includeSpace"></p>
+            <button id ='buttonNotIncludingSpace' class = 'display-buttons' onclick='displayNumCharachterNOTIncludingSpace()'>Not including Space</button>
+            <p class = 'ptag' id="notIncludeSpace"></p>
+            <button id ='buttonNumberOfWords' class = 'display-buttons' onclick='numOfWords()'>Number of words</button>
+            <p class = 'ptag' id="numOfWords"></p>
+            <button id ='buttonLikes' class = 'display-buttons' onclick='numOfLikes()'>Likes</button>
+            <p class = 'ptag' id="likes"></p>
+        </div>
+
+    </div>
+</section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
