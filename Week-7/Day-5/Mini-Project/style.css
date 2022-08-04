@@ -1,0 +1,52 @@
+
+html,body{
+    margin: 0px;
+    padding:0px
+}
+
+.navbar{
+    background-color: #6ddf82;
+    background-image: url('./Static/circuit-pattern.png');
+}
+
+#main{
+        align-items: flex-start;
+        height: 300vh;
+        width: 100vw;
+        background-color: #6556cd;
+        background-image: url('./Static/card-pattern.png');
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container-for-the-cards{
+    height: 500px;
+    width: 850px;
+    /* background-color: aqua; */
+    flex-wrap: wrap;
+}
+.card{
+    margin: 20px;
+    height: 250px; 
+    width: 200px;
+    background-color: #5fc2c5;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-image: url('./Static/card-pattern.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    
+}
+.card-img-top{
+    background-color: #303952;
+    width: 170px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.card-body p{
+    margin:0px ;
+}
