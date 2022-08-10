@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html body{
+            margin: 0px;
+        }
+        section{
+            width: 100vw;
+            height: 100vh;
+        }
+        .gifs-container{
+            width: 100px;
+            height: 100px;
+        }
+        .gif{
+            width:300px;
+   
+        }
+        .flex{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    
+    <section>
+        <input type="text" id ='user-search-result'>
+        <input type="button" value="Search The Gif That You Want" onclick='createGif()'>
+        
+        <div class="flex gifs-container">
+
+        </div>
+    </section>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
