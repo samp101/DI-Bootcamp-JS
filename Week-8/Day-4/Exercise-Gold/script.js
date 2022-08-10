@@ -5,7 +5,7 @@ xhr = new XMLHttpRequest()
 
 function createGif() {
     
-    xhr.open('GET', `https://api.giphy.com/v1/gifs/search?&q=donaldduck&rating=g&api_key=2Ub97pyuzJC53mHFJ8ckxVS1FtGwYbMw&limit=25`)
+    xhr.open('GET', `https://api.giphy.com/v1/gifs/random?&rating=g&api_key=2Ub97pyuzJC53mHFJ8ckxVS1FtGwYbMw&limit=25`)
     
     xhr.responseType = 'json'
 
