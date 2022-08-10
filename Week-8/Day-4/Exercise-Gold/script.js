@@ -12,25 +12,16 @@ function createGif() {
     xhr.send()
 
     xhr.onload = function(){
-        gifContainer.innerHTML = ''
+        // gifContainer.innerHTML = ''
+        let objectResponseImage = xhr.response.data.images.original.url
+        console.log(xhr.response);
         
-        let objectLength = xhr.response.data.length
-        for (let index = 0; index < objectLength ; index++) {
-            
-            let objectResponseImage = xhr.response.data[index].images.original
-            
             let gifImage = document.createElement('img')
-            gifImage.src = objectResponseImage.url
+            gifImage.src = objectResponseImage
             gifImage.classList.add('gif')
 
             gifContainer.append(gifImage)
 
-
-        }
-        
     }
-
-
 }
-
 createGif()
