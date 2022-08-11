@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html body{
+            margin: 0px;
+        }
+        section{
+            width: 100vw;
+            height: 100vh;
+        }
+        .gifs-container{
+            width: 500px;
+            height: 500px;
+            position: relative;
+        }
+        .gif{
+            width:250px;
+
+            margin:15px;
+   
+        }
+        .gifs-wrapper{
+            margin: 20px;
+            background-color: rgb(236, 173, 255);
+            position: relative;
+
+        }
+        .delete-gif{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .flex{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+
+    
+    
+    <section class="flex">
+
+        <input type="button" value="Delete All GIFS" onclick='removeAll()'> 
+        <input type="text" id ='user-search-result'>
+        <input type="button" value="Search The Gif That You Want" onclick='createGif()'>
+        
+        <div class="gifs-container">
+
+        </div>
+    </section>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
