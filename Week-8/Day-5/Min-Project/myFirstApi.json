@@ -1,0 +1,44 @@
+{
+    "coord": {
+        "lon": -79.4163,
+        "lat": 43.7001
+    },
+    "weather": [
+        {
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "01d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 24.59,
+        "feels_like": 24.02,
+        "temp_min": 23.4,
+        "temp_max": 27.46,
+        "pressure": 1018,
+        "humidity": 35
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 4.63,
+        "deg": 140,
+        "gust": 8.75
+    },
+    "clouds": {
+        "all": 0
+    },
+    "dt": 1660419631,
+    "sys": {
+        "type": 2,
+        "id": 2043365,
+        "country": "CA",
+        "sunrise": 1660385999,
+        "sunset": 1660436716
+    },
+    "timezone": -14400,
+    "id": 6167865,
+    "name": "Toronto",
+    "cod": 200
+}
