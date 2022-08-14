@@ -8,7 +8,7 @@ let userInput = document.querySelector('#user-search')
 function load(e){
 
     userInput = userInput.value    
-    const apiKey = 'e1ed4446096c35318bd88dc6d36878a9'
+    const apiKey = '6bc236fa8bd5e7e03f83fd8cea3eac74'
 
     xhr.open('GET',`http://api.openweathermap.org/data/2.5/weather?q=${userInput}&appid=${apiKey}&units=metric`)
     
