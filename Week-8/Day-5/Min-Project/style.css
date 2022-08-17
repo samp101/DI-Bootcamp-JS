@@ -27,11 +27,13 @@
     }
     #user-search::placeholder{
         color: #fff;
+        background-color: #0c1f44;
     }
     
     #user-search:focus{
         outline: none;
         color: #fff;
+        background-color: #0c1f44;
     }
 
     .weatherIcon{

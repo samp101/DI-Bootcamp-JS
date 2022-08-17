@@ -5,17 +5,16 @@ xhr = new XMLHttpRequest()
 
 
 let userInput = document.querySelector('#user-search')   
+
 function load(e){
-console.log(userInput);
-userInput = userInput.value    
-console.log(userInput);
-    const apiKey = '6bc236fa8bd5e7e03f83fd8cea3eac74'
+    // e.preventDefault()
+    userInput = userInput.value    
+    
 
     xhr.open('GET',`http://api.openweathermap.org/data/2.5/weather?q=${userInput}&appid=${apiKey}&units=metric`)
     
     xhr.responseType = 'json'
     xhr.send()
-    
 }
 xhr.onload = function(){
         // Storing the response in a Variable inorder the make it simplier
