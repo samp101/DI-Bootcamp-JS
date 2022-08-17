@@ -1,0 +1,101 @@
+
+    html body{
+        margin:0px;
+        padding: 0px;
+         background-color: #0c1f44;
+         color: #fff;
+    }
+    section{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #btn{
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+        background-color: red;
+    }
+    #user-search{
+        background-color: #0c1f44;
+        border: none;
+        border-bottom: 1px #fff solid;
+        color: #fff;
+    }
+    #user-search::placeholder{
+        color: #fff;
+        background-color: #0c1f44;
+    }
+    
+    #user-search:focus{
+        outline: none;
+        color: #fff;
+        background-color: #0c1f44;
+    }
+
+    .weatherIcon{
+        display: flex;
+        align-items: flex-start;
+        justify-items: flex-start;
+        flex-wrap: wrap;
+
+    }
+    .weather-card{
+        margin: 10px;
+        width:170px;
+        height:200px;
+        border-radius: 5px;
+        background-color:#fff ;
+    }
+    .info-for-card{
+        margin-left: 10px;
+        color: #6e7c91;
+    }
+    .city-country-cont{
+        position: relative;
+
+    }
+    .city-name{
+        display: inline-block;
+        font-size: 1.5em;
+        margin-top: 12px ;
+        margin-bottom: 12px ;
+    }
+.country{
+    background-color: #ed9828;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 10px;
+    position: absolute;
+    top: 10px;
+
+}
+.temp-cont{
+    position: relative;
+}
+.tempeture{
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0px;
+    color: #1e2431;
+    display: inline-block;
+}
+.celsius{
+    font-size: 1em;
+    display: inline;
+    color: #1e2431;
+    position: absolute;
+    top:3px
+}
+.cardImg{
+    width:70px;
+}
+.weather-description{
+    display: block;
+    /* margin-left: 20px; */
+    color: #b0b8c3;
+}
