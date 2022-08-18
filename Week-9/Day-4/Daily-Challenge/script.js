@@ -52,6 +52,8 @@ submit.addEventListener("click", () => {
     
     Promise.all([fetch(url[0]),fetch(url[1])]).then(res => 
             res.forEach((items,index) =>{
+                // inorder to clear the span if you check a differnt place
+                spanCollectionForSunriseTime[index] = ''
                 items.json()
                 .then(data=>{ 
                      text = document.createTextNode(data.results.sunrise);
