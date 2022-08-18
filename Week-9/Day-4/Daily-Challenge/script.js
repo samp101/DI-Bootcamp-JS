@@ -45,6 +45,8 @@ submit.addEventListener("click", () => {
     
     // c1Long  = c1Long.value,c1Lat  = c1Lat.value
     // c2Long = c2Long.value,c2Lat = c2Lat.value
+
+    spanCollectionForSunriseTime.forEach((e)=> e.innerHTML = '')
     const url =[]
     
     url[0] = `http://api.sunrise-sunset.org/json?lat=${c1Long}=${c1Lat}`
@@ -53,7 +55,7 @@ submit.addEventListener("click", () => {
     Promise.all([fetch(url[0]),fetch(url[1])]).then(res => 
             res.forEach((items,index) =>{
                 // inorder to clear the span if you check a differnt place
-                spanCollectionForSunriseTime[index] = ''
+                
                 items.json()
                 .then(data=>{ 
                      text = document.createTextNode(data.results.sunrise);
