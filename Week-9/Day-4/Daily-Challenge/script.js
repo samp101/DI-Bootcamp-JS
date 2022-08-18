@@ -45,7 +45,7 @@ submit.addEventListener("click", () => {
     
     // c1Long  = c1Long.value,c1Lat  = c1Lat.value
     // c2Long = c2Long.value,c2Lat = c2Lat.value
-
+    const url =[]
     
     url[0] = `http://api.sunrise-sunset.org/json?lat=${c1Long}=${c1Lat}`
     url[1] = `http://api.sunrise-sunset.org/json?lat=${c2Long}=${c2Lat}`
