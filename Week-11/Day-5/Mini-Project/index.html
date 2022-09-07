@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <form onsubmit='submitTask()' return false>
+            <input type="text" name="" id="input-name" class = 'inputs' placeholeder='Name Of Task' value = 'SHMUEL' >
+            <input type="text" name="" id="input-description" class = 'inputs' placeholeder='Description' value = 'lorum ipusm lorum ipusmlorum ipusmlorum ipusm'  >
+            <label for="date-start">Starting Time</label>
+            <input type="datetime-local" name="date-start" id="input-start-time" class = 'inputs' placeholeder='' value ='2022-09-13T13:00'  >
+            <label for="date-start">Ending Time</label>
+            <input type="datetime-local" name="" id="input-finish-time" class = 'inputs' placeholeder='' value ='2022-09-15T15:00'  >
+            <input type="submit"  id = 'input-submit' value="Upload Task">
+        </form>
+        
+        <div class="cards">
+
+        </div>
+
+    </section>
+
+    <script src="scrip.js"></script>
+</body>
+</html>
