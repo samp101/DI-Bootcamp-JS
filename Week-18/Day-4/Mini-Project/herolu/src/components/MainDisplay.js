@@ -7,29 +7,30 @@ import { addToStorage } from '../localStorangeFunc'
 import { Link } from "react-router-dom"
 import InputBar from "../subComponents/InputBar"
 import SelectedCity from "../subComponents/SelectedCity"
+import './MainDisplay.css'
 
-const WeatherMainDisplay = (props) => {
+const MainDisplay = (props) => {
 
 
     const {cityKey} = useContext(AppContext)
-    console.log(cityKey);
-    const styleCont = {
-        width:'80vw',
-        height:'40vh',
-        
-    }
+    
     const [userSearch,setUserSearch]= useState('')
 
     useEffect(()=>{
         props.callOnOpening()
     },[])
-    // addToFavourites()
+
     return(
-        <div>
-            <InputBar/>
-            <SelectedCity/>
-            <Weather5DayForecast/>
-        </div>)
+        <main className="main-container">
+            <section className='current-day-container'>
+              <SelectedCity/>
+            </section>
+            <section className="right-container" >
+              <InputBar />
+              <Weather5DayForecast/>
+            </section>
+        </main>
+        )
 }
 
 const statePropsToState = (state)=>{
@@ -45,7 +46,7 @@ const statePropsToState = (state)=>{
     }
   } 
   
-export default connect(statePropsToState,stateDispatchToProps)(WeatherMainDisplay)
+export default connect(statePropsToState,stateDispatchToProps)(MainDisplay)
 
 
 

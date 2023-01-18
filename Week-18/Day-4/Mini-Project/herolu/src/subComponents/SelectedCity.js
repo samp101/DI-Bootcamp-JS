@@ -3,14 +3,12 @@ import {onOpening, createSearch} from '../redux/action'
 import { useEffect, useState ,useContext} from "react"
 import { AppContext } from "../App"
 import { addToStorage } from '../localStorangeFunc'
-
+import InputBar from './InputBar'
 
 
 const SelectedCity = (props) =>{
-    const {cityKey} = useContext(AppContext)
-    const [userSearch,setUserSearch]= useState('')
     return(
-        <div>
+        <div className='current-day'>
             <h3>{props.citiesApi.name}</h3><h4>{props.citiesApi.countryId}</h4>
                 {props.weatherApi.map((e,i)=>{
                     return(

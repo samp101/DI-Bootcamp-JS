@@ -29,7 +29,7 @@ const Weather5DayForecast = (props)=>{
 
 
     return(
-        <div style={style} >
+        <div className='forecast-container' style={style} >
             {props.forcast.map((e,ind)=>{
                 return(
                     <div style={card} key={e.Date}>
