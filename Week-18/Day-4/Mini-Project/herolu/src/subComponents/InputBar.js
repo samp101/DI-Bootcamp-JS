@@ -7,12 +7,18 @@ import { addToStorage } from '../localStorangeFunc'
 
 
 const InputBar = (props) =>{
-    const {cityKey} = useContext(AppContext)
+    const {cityKey,celsius,setCelsius} = useContext(AppContext)
     const [userSearch,setUserSearch]= useState('')
+
+    const changeMetric = ()=>{
+      celsius ? setCelsius(false): setCelsius(true)
+    } 
+    
     return(
-        <div>
+        <div className='InputBar'>
             <input type='text' placeholder='Search The Weather' onChange={(e)=>setUserSearch(e.target.value)}></input>
             <input type='submit' value='Search The Weather' onClick={()=>props.createSearch(userSearch)}></input>
+            <input type='submit' value='Change Degrees' onClick={changeMetric}></input>
             <input type='submit' value='Add to favourites' onClick={()=>addToStorage(cityKey,props.citiesApi.name)}  ></input>
         </div>
     )

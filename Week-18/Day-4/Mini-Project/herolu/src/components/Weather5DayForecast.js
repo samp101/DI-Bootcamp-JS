@@ -26,7 +26,7 @@ const Weather5DayForecast = (props)=>{
         props.getForcast(cityKey)
     }
     },[props.citiesApi])
-
+    
 
     return(
         <div className='forecast-container' style={style} >

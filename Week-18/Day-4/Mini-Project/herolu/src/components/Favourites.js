@@ -13,7 +13,7 @@ const Favourites = (props) => {
     const favs = getFromStorage()||[]
 
     useEffect(()=>{
-    favs.map(city => props.createSearch1(city.cityKey,city.name))
+        favs.map(city => props.createSearch1(city.cityKey,city.name))
     },[])
 
     const deleteCity = (e)=>{
