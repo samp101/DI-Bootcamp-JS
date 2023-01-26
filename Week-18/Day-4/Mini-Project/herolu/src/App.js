@@ -19,8 +19,8 @@ function App(props) {
     flexDirection:'column',
     alignItems:'center',
 }
-const [celsius,setCelsius] = useState(false) 
-console.log('a');
+const [celsius,setCelsius] = useState(true) 
+console.log('b');
 
 return (
     <div className='App' >

@@ -18,6 +18,7 @@ export const onOpening = () => (dispatch,createStore)=> {
                 type:GETCITYNAME,
                 payload:data
             }) 
+            console.log(data[0].Key);
             return fetch(`http://dataservice.accuweather.com/currentconditions/v1/${data[0].Key}?apikey=${apiKey}`)
                     .then(res=>res.json())
                     .then(data2=>{

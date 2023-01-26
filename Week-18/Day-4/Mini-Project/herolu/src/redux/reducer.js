@@ -16,9 +16,9 @@ export const reducer = (state=initState,action={}) => {
         case GETCITYNAME :
             return{...state,cityName:{cityKey:action.payload[0].Key, name:action.payload[0].EnglishName, countryId: action.payload[0].Country.EnglishName}}
         case GETCITYWEATHER:
-            console.log('actions ', action.payload);
             return{...state,cityWeather:action.payload}
         case FORECAST:
+            console.log('actions ', action.payload);
             return{...state,forcast:action.payload.DailyForecasts}
         case ADD_FAV:
             const obj = action.payload 
